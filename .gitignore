@@ -16,7 +16,6 @@ target/
 .DS_Store
 
 # Presentation and internal docs
-PRESENTATION.md
 docs/
 
 # Codemie internal files
