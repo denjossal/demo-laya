@@ -15,9 +15,6 @@ target/
 # macOS
 .DS_Store
 
-# Presentation and internal docs
-docs/
-
 # npm leftover (no package.json in this repo)
 package-lock.json
 node_modules/
