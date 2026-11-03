@@ -18,9 +18,6 @@ target/
 # Presentation and internal docs
 docs/
 
-# Codemie internal files
-.codemie/
-
 # npm leftover (no package.json in this repo)
 package-lock.json
 node_modules/
