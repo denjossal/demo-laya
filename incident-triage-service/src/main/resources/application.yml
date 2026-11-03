@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+laya:
+  base-url: ${LAYA_BASE_URL:http://localhost:8000}
+  confidence-threshold: 0.75
+
+logging:
+  level:
+    com.epam.demo.triage: INFO

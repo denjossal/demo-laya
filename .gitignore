@@ -1,0 +1,27 @@
+# Maven build output
+target/
+*.class
+*.jar
+*.war
+
+# Maven wrapper cache
+.mvn/repository
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# Presentation and internal docs
+PRESENTATION.md
+docs/
+
+# Codemie internal files
+.codemie/
+
+# npm leftover (no package.json in this repo)
+package-lock.json
+node_modules/

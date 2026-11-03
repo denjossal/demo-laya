@@ -1,0 +1,21 @@
+services:
+  laya:
+    build: ./laya-sidecar
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+
+  app:
+    build: ./incident-triage-service
+    ports:
+      - "8080:8080"
+    environment:
+      LAYA_BASE_URL: http://laya:8000
+    depends_on:
+      laya:
+        condition: service_healthy
